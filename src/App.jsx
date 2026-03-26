@@ -7,8 +7,6 @@ const slides = [
     <div className="slide title-slide">
       <span className="tag">Anifilm 2026 · Liberec · 5.–10. května</span>
       <h1>Kolektivní<br />animace</h1>
-      <p className="subtitle">Martin Tomek + kolektiv</p>
-      <p><em>OSCAR qualifying festival pro krátké animované filmy</em></p>
     </div>
   ),
 
@@ -18,10 +16,6 @@ const slides = [
       <span className="tag">Kontext</span>
       <h2>Navazujeme na AniJam 2025</h2>
       <div className="divider" />
-      <p>
-        Kolaborativní animovaný film na principu <strong>exquisite corpse</strong>.
-        Vznikl na AniJamu v Třeboni.
-      </p>
       <p>
         Publikum Anifilmu: <strong>animátoři a lidé z animačního průmyslu</strong>.
         Cíl: vytvořit kolektivní dílo, které aktivuje festivalové publikum.
