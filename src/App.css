@@ -294,6 +294,29 @@
   border-color: #fff;
 }
 
+/* ── QR section ── */
+.qr-section {
+  display: flex;
+  align-items: center;
+  gap: 4vw;
+  margin-top: 1.5em;
+}
+
+.qr-code {
+  flex-shrink: 0;
+  padding: 12px;
+  background: #0a0a0a;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.qr-code img {
+  display: block;
+}
+
+.qr-info p {
+  max-width: 36ch;
+}
+
 /* ── Mobile touch hint ── */
 @media (max-width: 768px) {
   .slide {
@@ -311,5 +334,16 @@
 
   .big-number {
     display: none;
+  }
+
+  .qr-section {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5em;
+  }
+
+  .qr-code img {
+    width: 160px;
+    height: 160px;
   }
 }
