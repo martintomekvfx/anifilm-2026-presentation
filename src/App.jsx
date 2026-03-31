@@ -21,7 +21,7 @@ const slides = [
       <h2>Navazujeme na AniJam 2025</h2>
       <div className="divider" />
       <p>
-        Loňský ročník: <strong>exquisite corpse</strong> formát —
+        Loňský ročník: <strong>exquisite corpse</strong> formát,
         kolektivní analogová animace přímo na festivalu.
       </p>
       <div className="video-embed">
@@ -73,7 +73,7 @@ const slides = [
       <div className="divider" />
       <ol>
         <li>Naskenuj <strong>QR kód</strong> na letáku</li>
-        <li>Otevře se browser appka — <strong>nulová bariéra</strong></li>
+        <li>Otevře se browser appka</li>
         <li>Vidíš <strong>onboarding</strong> a předchozích pár framů</li>
         <li>Přidej vlastních X framů a <strong>navaž na animaci!</strong></li>
         <li>Vidíme <strong>výsledek</strong></li>
@@ -88,21 +88,20 @@ const slides = [
       <h2>Daily topic</h2>
       <div className="divider" />
       <p>
-        Každý festivalový den <strong>nové téma</strong> jako tvůrčí prompt.
-        Dává strukturu výsledné animaci.
+        Každý festivalový den <strong>nové téma</strong>.
       </p>
       <div className="columns three">
         <div className="col">
-          <h3>Den 1</h3>
-          <p><em>žízeň</em></p>
+          <h3><em>Den 1</em></h3>
+          <p><strong>žízeň</strong></p>
         </div>
         <div className="col">
-          <h3>Den 2</h3>
-          <p><em>let</em></p>
+          <h3><em>Den 2</em></h3>
+          <p><strong>let</strong></p>
         </div>
         <div className="col">
-          <h3>Den 3</h3>
-          <p><em>hora</em></p>
+          <h3><em>Den 3</em></h3>
+          <p><strong>hora</strong></p>
         </div>
       </div>
     </div>
@@ -116,8 +115,8 @@ const slides = [
         <div className="col">
           <h3>Jak se lidi dostanou k appce</h3>
           <ul>
-            <li><strong>QR kódy na letácích</strong> — roznesené po festivalu</li>
-            <li><strong>Osobní kontakt</strong> — ukážeš člověku appku na mobilu</li>
+            <li><strong>QR kódy na letácích</strong>, roznesené po festivalu</li>
+            <li><strong>Osobní kontakt</strong>, ukážeš člověku appku na mobilu</li>
           </ul>
         </div>
         <div className="col">
@@ -138,7 +137,7 @@ const slides = [
   () => (
     <div className="slide">
       <span className="tag">Prototyp</span>
-      <h2>Pixilate — vyzkoušej si to</h2>
+      <h2>Vyzkoušej si to</h2>
       <div className="divider" />
       <div className="qr-section">
         <div className="qr-code">
@@ -150,14 +149,14 @@ const slides = [
             Otevři na <strong>mobilu</strong> a zkus přidat frame.
           </p>
           <p>
-            <strong><a href={PIXILATE_URL} target="_blank" rel="noopener">Click here</a></strong>
+            <strong><a href={PIXILATE_URL} target="_blank" rel="noopener">Manualní odkaz</a></strong>
           </p>
         </div>
       </div>
       <div className="divider" />
       <div className="contact-info">
         <p><strong>Martin Tomek</strong><br />martintomek.vfx@gmail.com<br />+774630132</p>
-        <p><strong>Michal Tancjura</strong></p>
+        <p><strong>Michal Tancjura</strong><br />michal.tancjura@gmail.com</p>
       </div>
     </div>
   ),
