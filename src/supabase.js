@@ -18,7 +18,7 @@ export function getFrameUrl(path) {
 export async function listFrames(session) {
   const { data, error } = await supabaseAdmin.storage
     .from(BUCKET)
-    .list(session, { sortBy: { column: 'name', order: 'asc' } })
+    .list(session, { sortBy: { column: 'name', order: 'asc' }, limit: 1000 })
 
   if (error || !data) return []
   return data
