@@ -149,10 +149,10 @@ const slides = [
         <div className="col">
           <ul>
             <li>Daily topic = <strong>dramaturgie</strong></li>
-            <li>Jednodušší tech, <strong>nižší riziko</strong></li>
-            <li>Live projekce = <strong>okamžitý feedback</strong></li>
+            
           </ul>
         </div>
+        
       </div>
     </div>
   ),
