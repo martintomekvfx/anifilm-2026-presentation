@@ -277,7 +277,7 @@ export default function Pixilate() {
       <div className="pix-controls">
         <button
           className="pix-side-btn"
-          onClick={() => { setPlaybackIdx(0); setShowPlayback(true) }}
+          onClick={() => { setPlaybackIdx(0); setPlaying(true); setShowPlayback(true) }}
           disabled={framePaths.length === 0}
           title="Play"
         >
