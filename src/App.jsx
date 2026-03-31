@@ -40,7 +40,7 @@ const slides = [
     <div className="slide section-slide">
       <span className="tag">Koncept</span>
       <h1>Kolektivní<br />Dragonframe</h1>
-      <p className="subtitle">Browser jako animační nástroj · nulová bariéra vstupu</p>
+      <p className="subtitle">Browser jako animační nástroj</p>
     </div>
   ),
 
@@ -76,6 +76,7 @@ const slides = [
         <li>Otevře se browser appka — <strong>nulová bariéra</strong></li>
         <li>Vidíš <strong>onboarding</strong> a předchozích pár framů</li>
         <li>Přidej vlastních X framů a <strong>navaž na animaci!</strong></li>
+        <li>Vidíme <strong>výsledek</strong></li>
       </ol>
     </div>
   ),
@@ -122,43 +123,18 @@ const slides = [
         <div className="col">
           <h3>Výstup</h3>
           <ul>
-            
             <li>Animace roste v <strong>reálném čase</strong></li>
             <li>Formát: chronologicky</li>
-            
             <li><strong>Finální projekce</strong> v baru <strong>Papír</strong></li>
           </ul>
         </div>
       </div>
-    </div>
-  ),
-
-  // 7 — Concept B: Strengths
-  () => (
-    <div className="slide">
-      <span className="tag">Proč to funguje</span>
-      <h2>Silné stránky</h2>
       <div className="divider" />
-      <div className="columns">
-        <div className="col">
-          <ul>
-            <li><strong>Nulová bariéra</strong> vstupu</li>
-            <li>Cílí na animátory — <strong>onion skin je jim přirozený</strong></li>
-            <li>Vědomé navazování = <strong>vizuálně zajímavější</strong> výstup</li>
-          </ul>
-        </div>
-        <div className="col">
-          <ul>
-            <li>Daily topic = <strong>dramaturgie</strong></li>
-            
-          </ul>
-        </div>
-        
-      </div>
+      <p>Vizuální styl aplikace: <strong>kreslená animace</strong></p>
     </div>
   ),
 
-  // 8 — Prototype: Pixilate
+  // 7 — Prototype: Pixilate
   () => (
     <div className="slide">
       <span className="tag">Prototyp</span>
