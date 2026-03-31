@@ -155,7 +155,7 @@ const slides = [
       </div>
       <div className="divider" />
       <div className="contact-info">
-        <p><strong>Martin Tomek</strong><br />martintomek.vfx@gmail.com<br />+774630132</p>
+        <p><strong>Martin Tomek</strong><br />martintomek.vfx@gmail.com<br />+420774630132</p>
         <p><strong>Michal Tancjura</strong><br />michal.tancjura@gmail.com</p>
       </div>
     </div>
