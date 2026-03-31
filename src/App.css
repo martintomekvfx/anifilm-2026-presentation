@@ -294,6 +294,19 @@
   border-color: #fff;
 }
 
+/* ── Contact info ── */
+.contact-info {
+  display: flex;
+  gap: 4vw;
+  margin-top: 0.5em;
+}
+
+.contact-info p {
+  font-size: clamp(0.8rem, 1.2vw, 1rem);
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 0;
+}
+
 /* ── QR section ── */
 .qr-section {
   display: flex;

@@ -60,7 +60,7 @@ const slides = [
       </p>
       <p>
         <strong>Nulová bariéra vstupu:</strong> QR → browser → hotovo.
-        Žádná instalace, žádný onboarding hell.
+      
       </p>
     </div>
   ),
@@ -154,21 +154,11 @@ const slides = [
           </p>
         </div>
       </div>
-    </div>
-  ),
-
-  // 9 — End
-  () => (
-    <div className="slide title-slide">
-      <span className="tag">Díky</span>
-      <h1>Díky.</h1>
-      <p>
-        <a href="https://youtu.be/4_1Ed4Ys1UE" target="_blank" rel="noopener">AniJam 2025</a>
-        {' · '}
-        <a href={PIXILATE_URL} target="_blank" rel="noopener">Pixilate</a>
-        {' · '}
-        <a href="https://github.com/Themolx" target="_blank" rel="noopener">GitHub</a>
-      </p>
+      <div className="divider" />
+      <div className="contact-info">
+        <p><strong>Martin Tomek</strong><br />martintomek.vfx@gmail.com<br />+774630132</p>
+        <p><strong>Michal Tancjura</strong></p>
+      </div>
     </div>
   ),
 ]
