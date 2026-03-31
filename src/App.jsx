@@ -2,8 +2,7 @@ import { useState, useEffect, useCallback } from 'react'
 import Pixilate from './Pixilate'
 import './App.css'
 
-const BASE = '/anifilm-2026-presentation'
-const PIXILATE_URL = `${window.location.origin}${BASE}/pixilate`
+const PIXILATE_URL = `${window.location.origin}/anifilm-2026-presentation/pixilate`
 const QR_IMG = `https://api.qrserver.com/v1/create-qr-code/?size=280x280&data=${encodeURIComponent(PIXILATE_URL)}&bgcolor=0a0a0a&color=ffffff`
 
 const slides = [
