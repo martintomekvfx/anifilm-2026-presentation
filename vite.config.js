@@ -5,4 +5,5 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base: '/anifilm-2026-presentation/',
+  appType: 'spa',
 })

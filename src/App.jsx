@@ -1,7 +1,9 @@
 import { useState, useEffect, useCallback } from 'react'
+import Pixilate from './Pixilate'
 import './App.css'
 
-const PIXILATE_URL = 'https://themolx.github.io/pixilate/'
+const BASE = '/anifilm-2026-presentation'
+const PIXILATE_URL = `${window.location.origin}${BASE}/pixilate`
 const QR_IMG = `https://api.qrserver.com/v1/create-qr-code/?size=280x280&data=${encodeURIComponent(PIXILATE_URL)}&bgcolor=0a0a0a&color=ffffff`
 
 const slides = [
@@ -197,6 +199,14 @@ const slides = [
 ]
 
 function App() {
+  const isPixilate = window.location.pathname.replace(/\/$/, '').endsWith('/pixilate')
+
+  if (isPixilate) return <Pixilate />
+
+  return <Presentation />
+}
+
+function Presentation() {
   const [current, setCurrent] = useState(0)
   const total = slides.length
 

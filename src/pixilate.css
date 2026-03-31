@@ -1,0 +1,257 @@
+/* ── Pixilate App ── */
+.pix-app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: #0a0a0a;
+  color: #fff;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  overflow: hidden;
+}
+
+/* ── Header ── */
+.pix-header {
+  padding: 16px 20px 12px;
+  background: #0a0a0a;
+  text-align: center;
+}
+
+.pix-header h1 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin: 4px 0;
+}
+
+.pix-header p {
+  font-size: 0.75rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.4);
+  letter-spacing: 0.05em;
+}
+
+.pix-tag {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 0.2em 0.6em;
+}
+
+/* ── Camera viewport ── */
+.pix-viewport {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.pix-viewport video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pix-viewport canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.pix-onion-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+/* ── Controls bar ── */
+.pix-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px;
+  background: #111;
+  gap: 12px;
+}
+
+.pix-capture-btn {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.pix-capture-btn::after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.pix-capture-btn:active::after {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.pix-capture-btn:disabled {
+  opacity: 0.4;
+}
+
+.pix-side-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.pix-side-btn:active {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* ── Frame counter ── */
+.pix-frame-count {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 6px 12px;
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.6);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ── Onion opacity slider ── */
+.pix-onion-control {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 8px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.65rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 0.05em;
+}
+
+.pix-onion-control input {
+  width: 80px;
+  accent-color: #fff;
+}
+
+/* ── Playback overlay ── */
+.pix-playback-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0a0a0a;
+  display: flex;
+  flex-direction: column;
+  z-index: 200;
+}
+
+.pix-playback-overlay > img {
+  flex: 1;
+  width: 100%;
+  object-fit: cover;
+}
+
+.pix-playback-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 16px;
+  background: #111;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.pix-playback-controls button {
+  padding: 8px 20px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 400;
+  cursor: pointer;
+  letter-spacing: 0.05em;
+}
+
+.pix-playback-controls button:active {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* ── Timeline strip ── */
+.pix-timeline {
+  display: flex;
+  gap: 3px;
+  padding: 8px;
+  overflow-x: auto;
+  background: #0a0a0a;
+  -webkit-overflow-scrolling: touch;
+}
+
+.pix-timeline-thumb {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  object-fit: cover;
+  border: 2px solid transparent;
+  opacity: 0.5;
+}
+
+.pix-timeline-thumb.current {
+  border-color: #fff;
+  opacity: 1;
+}
+
+/* ── Loading state ── */
+.pix-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.5);
+  background: #0a0a0a;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
